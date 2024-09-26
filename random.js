@@ -74,26 +74,6 @@ function copy(){
         msg.innerHTML = "";
       }, 900);
 }
-58
-28
-60
-28
-24
-43
-75
-65
-50
-68
-31
-75
-40
-54
-39
-49
-49
-60
-68
-29
 
 //function for manually deleting the random numbers in the container
 function del(){
