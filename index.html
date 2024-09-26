@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>      <!-- Main container --> 
+        <h1>Random Number Generator</h1>
+        
+        <form action="" id="form">
+            <label for="startRange">Start of Range</label>
+            <input type="text" id="startRange" required>
+            <br>
+            <label for="endRange">End of Range</label>
+            <input type="text" id="endRange" required>
+            <br>
+            <button type="submit">Generate</button>
+            
+        </form>
+        <p id="result"></p>
+    </section>
+    
+    <div class="view">View previously generated numbers;</div>
+    <input type="checkbox" id="check">
+    <label for="check" id="toggle">Toggle List</label>
+    <div class="wrap">
+        <p id="msg"></p>
+    </div>
+    <div id="numbers-container">     <!-- Container for storing generated random numbers -->
+        <div class="fixed">
+            <span class="copy"><svg onclick="copy()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/></svg></span>
+            <span id="max"></span>
+            <span class="del"><svg onclick="del()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg></span>
+        </div>
+        <div id="hist"></div>
+        <pre id="numbers"></pre>
+    </div>
+
+    <script src="random.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Aligning contents in the middle of the page */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(88, 88, 109);
+}
+
+/* Styling of container */
+section{
+    margin-top: 75px;
+    text-align: center;
+    border: 2px solid rgb(43, 43, 43);
+    padding: 13px 45px;
+    border-radius: 40px;
+    background-color: rgb(110, 110, 124);
+}
+
+/* Styling of H1 */
+h1{
+    margin-bottom: 25px;
+    color: rgb(27, 27, 27);
+    font-family: 'Nunito';
+}
+
+/* Styling of labels */
+label{
+    padding-right: 4px;
+    color: rgb(27, 27, 27);
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 13px;
+}
+
+form label:nth-of-type(2){
+    padding-right: 12px;
+    color: rgb(27, 27, 27);
+}
+
+/* Styling of input fields */
+input{
+    margin-bottom: 25px;
+    outline: none;
+    border-radius: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 5px 0px;
+    padding-left: 10px;
+}
+
+/* Styling of button */
+button{
+    padding: 13px 15px;
+    background-image: linear-gradient(to right, rgb(21, 21, 31) , rgb(42, 42, 61));
+    border-radius: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: all 0.05s;
+    text-decoration: none;
+    font-family: 'Nunito';
+}
+
+button:active{
+    transform: translateY(-3px);
+    background-image: linear-gradient(to right, rgb(42, 42, 61), rgb(21, 21, 31) );
+}
+
+/* Styling of random number value */
+#result{
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    font-family: 'Nunito';
+}
+
+.view{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: rgb(20, 20, 20);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#numbers-container{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Styling of toggle list button */
+#toggle{
+    margin-top: 5px;
+    padding: 13px 15px;
+    background-image: linear-gradient(to right, rgb(21, 21, 31) , rgb(42, 42, 61));
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: all 0.05s;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#toggle:active{
+    background-image: linear-gradient(to right, rgb(42, 42, 61), rgb(21, 21, 31) );
+}
+
+/* Styling of random numbers container */
+#check:checked ~ #numbers-container{
+    max-height: 150px;
+    width: 150px;
+    min-height: 55px;
+    overflow-y: auto;
+    border: 1px solid black;
+    background-color: white;
+    position: static;
+    border-radius: 5px;
+    transform: translateY(15px);
+    display: block;
+}
+
+.fixed{
+    position: sticky;
+    top: 0;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+    left: 0;
+    right: 0;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling of copy and delete icons */
+.copy{
+    padding-left: 5px;
+}
+
+.copy svg{
+    height: 15px;
+    width: 15px;
+    fill: rgb(38, 38, 53);
+}
+
+.del{
+    padding-right: 5px;
+}
+
+.del svg{
+    height: 15px;
+    width: 15px;
+    fill: rgb(38, 38, 53);
+}
+
+/* Styling of elements inside the random numbers conatainer */
+#max{
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+pre{
+    text-align: center;
+}
+
+#hist{
+    transform: translate(47px, 10px);
+    position: absolute;
+    font-size: 10px;
+}
+
+#msg{
+    position: absolute;
+    font-family: 'Nunito';
+    font-weight: 600;
+    transform: translate(-120px, -20px);
+    font-size: 12px;
+}
+
+.wrap{
+    position: static;
+}
+
+/* Media queries for Tablets and Phones */
+@media (max-width: 500px){
+    h1{
+        font-size: 18px !important;
+    }
+
+    label, input{
+        font-size: 12px;
+    }
+
+    form label:nth-of-type(2){
+        padding-right: 10px;
+    }
+
+    input{
+        padding: 5px 0px;
+        padding-left: 10px;
+    }
+}
