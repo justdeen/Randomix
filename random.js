@@ -24,22 +24,24 @@ toggle.addEventListener('click', () => {
     }
     else{
         toggle.textContent = 'Collapse'
-    }
-    
+    }    
 })
-
-
 
 // Listens for when the button is clicked, then executes the nested function
 form.addEventListener('submit', (e) => {
     e.preventDefault();   // prevents the page from refreshing after the button is clicked
+
+    if(isNaN(startInput.value) || isNaN(endInput.value)){
+        alert('Input must be a value.')
+        return;
+    }
     
     const x = parseInt(startInput.value);  // Retrieves the value (string, number etc.) in the input field and converts it to a number
     const endOfRange = parseInt(endInput.value);    // Retrieves the value (string, number etc.) in the input field and converts it to a number
     const y = endOfRange - x;   // Logic for generating the random numbers 
     
     if(x>=endOfRange){    // condition for displaying an alert when start of range is lesser than end of range   
-        alert('Start of range must be less than end of range');
+        alert('Start of range must be less than end of range.');
         return;
     }
 
