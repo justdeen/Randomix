@@ -17,11 +17,11 @@ Implementing this project presented several challenges due to my ongoing familia
 
 1. Variable Declaration and Lexical Binding: Initially, declaring variables without understanding lexical binding led to logical errors.
 
-SOLUTION: Recognizing the importance of variable order and scope compilation resolved the issue.
+    SOLUTION: Recognizing the importance of variable order and scope compilation resolved the issue.
 
 2. Event Listener Context: Incorrectly referencing elements triggering event listeners
 
-SOLUTION: This was resolved by understanding the "this" keyword and arrow function syntax.
+    SOLUTION: This was resolved by understanding the "this" keyword and arrow function syntax.
 
 ## User Interface
 A sleek, modern dark theme interface was chosen, utilizing shades of black and navy blue to maintain simplicity.
