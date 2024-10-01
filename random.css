@@ -11,7 +11,7 @@ body{
 section{
     margin-top: 75px;
     text-align: center;
-    border: 2px solid rgb(43, 43, 43);
+    /* border: 2px solid rgb(43, 43, 43); */
     padding: 13px 45px;
     border-radius: 40px;
     background-color: rgb(110, 110, 124);
