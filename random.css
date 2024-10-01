@@ -4,7 +4,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    background-color: rgb(88, 88, 109);
+    background-color: rgb(173, 173, 173);
 }
 
 /* Styling of container */
