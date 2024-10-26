@@ -1,3 +1,5 @@
+![Notes_241026_131016_446](https://github.com/user-attachments/assets/3ef2a790-f757-4f6e-bcbc-462772fde805)
+
 ## 💫 Overview
 This mini project generates random numbers, temporarily storing them in a div container. The list can be viewed by clicking the "Toggle list" button.
 
